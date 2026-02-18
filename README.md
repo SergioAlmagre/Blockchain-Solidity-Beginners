@@ -41,11 +41,11 @@ Este repo irá creciendo con implementaciones y proyectos alrededor de:
 
 ### Entorno de desarrollo y herramientas
 - **Remix** (despliegue rápido y directo)
-- **Ganache** (blockchain local para pruebas)
+- **Docker**  (entorno de desarrollo y despliegue)
 - **Truffle** (flujo de desarrollo y despliegue)
 - **Truffle PRO** (mejoras/flujo más profesional)
 - **Hardhat** (scripts, despliegue, testing, debugging)
-- **Foundry** (scripts, despliegue, testing, debugging)
+
 
 ### Ecosistema y redes
 - **Oráculos** (fundamentos teóricos)
