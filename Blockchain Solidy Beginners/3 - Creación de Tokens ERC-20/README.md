@@ -20,5 +20,14 @@ Implementación utilizando una base local para entender mejor la estructura inte
 - **Función createTokens:** Permite a los usuarios generar (mintear) sus propios tokens dinámicamente.
 - **Interacción con el Padre:** Llamadas a funciones internas del contrato base.
 
-## El Estándar ERC-20
-El estándar ERC-20 define una interfaz común que permite que los tokens funcionen de manera predecible en carteras (wallets), exchanges y otros contratos inteligentes. Incluye funciones como `transfer`, `balanceOf`, `approve` y `allowance`.
+### 3. Interfaz ERC-20 e Implementación
+**Archivo:** `3_interfaz_ERC20.sol`
+
+Profundización en la arquitectura de contratos mediante el uso de interfaces.
+- **Interfaces (`interface`):** Qué son y por qué son fundamentales para la interoperabilidad. Son contratos que solo declaran funciones sin implementarlas.
+- **Implementación de Interfaz:** Cómo un contrato puede implementar una interfaz usando la palabra clave `override`.
+- **Interacción Externa:** Las interfaces permiten interactuar con cualquier token ERC-20 desplegado en la red (como USDT, DAI, etc.) sin necesidad de tener el código fuente completo del mismo.
+
+## Conceptos Clave
+- **Standard IERC20:** La interfaz que define el estándar mínimo para que un token sea compatible con el ecosistema Ethereum.
+- **Herencia y Override:** El uso de `virtual` y `override` para extender y definir funcionalidades en contratos secundarios.
