@@ -12,6 +12,15 @@ Implementación de un token no fungible utilizando la librería estándar de Ope
 - **Gestión de IDs (Counters):** Uso de la librería `Counters` de OpenZeppelin para asignar un identificador numérico único secuencial a cada pieza minteada.
 - **Minteo Seguro (`_safeMint`):** Explicación de cómo la función segura evita la pérdida irrecuperable de tokens al enviarlos a contratos que no los soportan.
 
+### 2. Colección de Arte NFT (Avanzado)
+**Archivo:** `2_art.sol`
+
+Implementación completa de una colección de NFTs (tipo PFP o Arte Digital) estructurada para producción.
+- **Minteo de Pago (`payable`):** Cómo exigir un pago en la criptomoneda nativa (Ethers) para permitir la creación del NFT.
+- **Metadatos y Atributos:** Uso de `struct` para almacenar características únicas en la cadena (ADN, Rareza, Nivel).
+- **Propietario del Contrato (`Ownable`):** Implementación de esta librería para restringir funciones (ej. retirar los Ethers ganados) únicamente al administrador.
+- **Retiro de Fondos (`withdraw`):** El patrón estándar y seguro usando `.call{value: ...}("")` para extraer la recaudación del contrato.
+
 ## Conceptos Clave
 - **Unicidad:** Cada NFT dentro de un mismo contrato inteligente se diferencia de los demás por su `tokenId`.
 - **Propiedad Digital:** Los NFTs se utilizan en casos de uso como criptoarte, entradas a eventos, objetos de videojuegos y registro de propiedad intelectual.
